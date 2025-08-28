@@ -1,0 +1,58 @@
+{
+  "name": "Sergio",
+  "role": "Desarrollador Frontend",
+  "location": "España",
+  "email": "sergio@example.com",
+  "linkedin": "https://www.linkedin.com/in/sergio",
+  "github": "https://github.com/sergio",
+  "summary": "Desarrollador frontend especializado en React y TypeScript, enfocado en rendimiento, accesibilidad y buenas prácticas.",
+  "experience": [
+    {
+      "title": "Frontend Developer",
+      "company": "Empresa X",
+      "start": "2022-01",
+      "end": "Actualidad",
+      "highlights": [
+        "Diseño e implementación de componentes reutilizables con React y Tailwind.",
+        "Mejora del rendimiento (LCP, TTI) mediante splitting y lazy loading.",
+        "Colaboración con diseño para sistemas de UI consistentes."
+      ]
+    },
+    {
+      "title": "UI Engineer",
+      "company": "Empresa Y",
+      "start": "2020-01",
+      "end": "2021-12",
+      "highlights": [
+        "Creación de librería interna de componentes.",
+        "Mejoras de accesibilidad (WCAG AA).",
+        "Automatización de flujos con CI/CD."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Portfolio SPA",
+      "description": "SPA con routing y lazy loading.",
+      "tech": ["React", "Vite", "Tailwind"],
+      "link": "#"
+    },
+    {
+      "name": "Dashboard",
+      "description": "Tableros con estado global y gráficos.",
+      "tech": ["TypeScript", "Zustand", "Charts"],
+      "link": "#"
+    }
+  ],
+  "skills": [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Vite",
+    "Testing",
+    "Accesibilidad"
+  ]
+}
+
+
+
