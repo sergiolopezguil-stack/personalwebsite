@@ -6,5 +6,10 @@ export default defineConfig({
   plugins: [react()],
   // Configura base para GitHub Pages solo en CI.
   // Para repos de proyecto: https://username.github.io/<repo>/
-  base: process.env.GITHUB_REPOSITORY ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/` : '/',
+  // Para repos de usuario/organización: https://<org|user>.github.io/ => base '/'
+  base: (() => {
+    const repo = process.env.GITHUB_REPOSITORY?.split('/')[1]
+    if (!repo) return '/'
+    return repo.endsWith('.github.io') ? '/' : `/${repo}/`
+  })(),
 })
