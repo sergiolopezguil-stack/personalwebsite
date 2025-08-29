@@ -1,6 +1,7 @@
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import cv from '../data/cv.json'
 
 export default function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -80,8 +81,9 @@ export default function Layout() {
       </main>
 
       <footer className="border-t border-neutral-200 dark:border-neutral-800 py-6 mt-12">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-sm text-neutral-500">
-          © {new Date().getFullYear()} CV
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-sm text-neutral-500 flex items-center justify-between">
+          <span>© {new Date().getFullYear()}</span>
+          <a href={cv.linkedin} target="_blank" rel="noreferrer noopener" className="underline hover:text-primary">{cv.name}</a>
         </div>
       </footer>
     </div>

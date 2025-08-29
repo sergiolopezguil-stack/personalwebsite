@@ -1,32 +1,110 @@
 {
-  "name": "Sergio",
-  "role": "Desarrollador Frontend",
+  "name": "Sergio López Guil",
+  "role": "Programador",
   "location": "España",
-  "email": "sergio@example.com",
-  "linkedin": "https://www.linkedin.com/in/sergio",
+  "email": "sergio.lopez.guil@gmail.com",
+  "phone": "611403470",
+  "linkedin": "https://www.linkedin.com/in/sergio-lopez-guil-411293359",
   "github": "https://github.com/sergio",
-  "summary": "Desarrollador frontend especializado en React y TypeScript, enfocado en rendimiento, accesibilidad y buenas prácticas.",
+  "summary": "Programador con sólida formación en desarrollo de aplicaciones multiplataforma y experiencia práctica en HTML5, CSS, JavaScript, C#, Java. Comprometido con la excelencia técnica, la resolución eficiente de problemas y con interés en crecer profesionalmente en entornos dinámicos e innovadores.",
   "experience": [
     {
-      "title": "Frontend Developer",
-      "company": "Empresa X",
-      "start": "2022-01",
-      "end": "Actualidad",
+      "title": "Prácticas como Programador",
+      "company": "Solunix S.A",
+      "duration": "+80h",
       "highlights": [
-        "Diseño e implementación de componentes reutilizables con React y Tailwind.",
-        "Mejora del rendimiento (LCP, TTI) mediante splitting y lazy loading.",
-        "Colaboración con diseño para sistemas de UI consistentes."
+        "Desarrollo de aplicaciones con C#, Java y JavaScript.",
+        "Colaboración en entornos de trabajo reales.",
+        "Optimización de código y resolución de problemas."
       ]
     },
     {
-      "title": "UI Engineer",
-      "company": "Empresa Y",
-      "start": "2020-01",
-      "end": "2021-12",
+      "title": "Prácticas como Programador Web",
+      "company": "Agencia de Marketing MD",
+      "duration": "+380h",
       "highlights": [
-        "Creación de librería interna de componentes.",
-        "Mejoras de accesibilidad (WCAG AA).",
-        "Automatización de flujos con CI/CD."
+        "Desarrollo web con HTML5, CSS, JavaScript y PHP.",
+        "Gestión de CMS y mantenimiento de sitios web.",
+        "Colaboración en proyectos de marketing digital."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "IES Ferran Casablancas",
+      "degree": "Bachillerato en Ciencias y Tecnología",
+      "start": "2021-09",
+      "end": "2023-06",
+      "highlights": [
+        "Itinerario de Ciencias y Tecnología (Matemáticas, Física, Química)",
+        "Fundamentos de programación y pensamiento computacional",
+        "Proyectos tecnológicos y trabajo en equipo"
+      ],
+      "courses": [
+        "Matemáticas II",
+        "Física",
+        "Química",
+        "Tecnologías de la Información y la Comunicación (TIC)",
+        "Lengua Castellana y Literatura",
+        "Inglés"
+      ],
+      "details": [
+        "Participación en proyectos STEM y ferias tecnológicas del centro",
+        "Trabajo de investigación orientado a tecnologías de la información",
+        "Refuerzo de competencias analíticas y resolución de problemas"
+      ]
+    },
+    {
+      "school": "IES Sabadell",
+      "degree": "Curso de formación en programación y gestión de servidor web",
+      "start": "2022-12",
+      "end": "2023-06",
+      "highlights": [
+        "Administración de servidores web (Apache/Nginx)",
+        "Despliegue y automatización básica (entornos Linux)",
+        "Buenas prácticas de seguridad y copias de seguridad"
+      ],
+      "courses": [
+        "Linux y administración de sistemas",
+        "Servidores web: Apache y Nginx",
+        "DNS, SSL/TLS y certificados",
+        "Bash scripting y automatización",
+        "Despliegue de apps web"
+      ],
+      "details": [
+        "Configuración de virtual hosts, redirecciones y compresión",
+        "Instalación y renovación de certificados SSL con Let's Encrypt",
+        "Planificación de copias de seguridad y restauración"
+      ]
+    },
+    {
+      "school": "IES Sabadell",
+      "degree": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma y Ocio Digital",
+      "start": "2023-09",
+      "end": "2025",
+      "highlights": [
+        "Programación en Java y C# (POO, patrones de diseño)",
+        "Bases de datos SQL y NoSQL (MySQL, MongoDB)",
+        "Desarrollo Android (Android Studio)",
+        "Desarrollo de videojuegos y multimedia con Unity",
+        "Gestión de proyectos y control de versiones (Git)"
+      ],
+      "courses": [
+        "Programación",
+        "Entornos de Desarrollo",
+        "Bases de Datos",
+        "Lenguajes de Marcas y Sistemas de Gestión de Información",
+        "Acceso a Datos",
+        "Desarrollo de Interfaces",
+        "Programación Multimedia y Dispositivos Móviles",
+        "Programación de Servicios y Procesos",
+        "Sistemas de Gestión Empresarial",
+        "Proyecto DAM"
+      ],
+      "details": [
+        "Proyecto integrador de app móvil con persistencia local y remota",
+        "Diseño de APIs REST y consumo desde cliente",
+        "Metodologías ágiles (Scrum) y trabajo en equipo"
       ]
     }
   ],
@@ -45,12 +123,34 @@
     }
   ],
   "skills": [
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Vite",
-    "Testing",
-    "Accesibilidad"
+    "C#",
+    "Java",
+    "JavaScript",
+    "EntityFramework",
+    "HTML5",
+    "CSS",
+    "Bootstrap",
+    "PHP",
+    "jQuery",
+    "CMS (WordPress)",
+    "SQL (MySQL, MariaDB, PostgreSQL)",
+    "MongoDB",
+    "Unity",
+    "Android Studio",
+    "Gestión de sistemas",
+    "Optimización de código",
+    "Atención al detalle",
+    "Resolución de problemas",
+    "Trabajo en equipo",
+    "Compromiso con la excelencia"
+  ],
+  "languages": [
+    { "name": "Castellano", "level": "Nativo" },
+    { "name": "Catalán", "level": "Nativo" },
+    { "name": "Inglés", "level": "B1" }
+  ],
+  "achievements": [
+    "Quinto clasificado en el torneo nacional de programación competitiva 'Programame'."
   ]
 }
 

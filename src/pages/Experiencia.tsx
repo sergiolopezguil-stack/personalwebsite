@@ -2,21 +2,52 @@ import cv from '../data/cv.json'
 
 export default function Experiencia() {
   return (
-    <section className="space-y-6">
-      <h2 className="text-2xl font-bold">Experiencia</h2>
-      <div className="grid gap-4">
-        {cv.experience?.map((job) => (
-          <article key={job.title + job.company} className="rounded-lg border border-neutral-200 dark:border-neutral-800 p-4">
-            <div className="flex items-center justify-between">
-              <h3 className="font-semibold">{job.title} — {job.company}</h3>
-              <span className="text-xs text-neutral-500">{job.start} — {job.end}</span>
-            </div>
-            <ul className="mt-2 list-disc pl-5 space-y-1 text-sm text-neutral-600 dark:text-neutral-300">
-              {job.highlights?.map((h) => (<li key={h}>{h}</li>))}
-            </ul>
-          </article>
-        ))}
+    <section className="space-y-10">
+      <div className="space-y-6">
+        <h2 className="text-2xl font-bold">Experiencia</h2>
+        <div className="grid gap-4">
+          {cv.experience?.map((job) => {
+            //const hasDates = Boolean(job.start || job.end)
+            const rightMeta = /* hasDates ? `${job.start ?? ''} — ${job.end ?? ''}` : */ (job.duration ?? '')
+            return (
+              <article key={job.title + job.company} className="rounded-lg border border-neutral-200 dark:border-neutral-800 p-4">
+                <div className="flex items-center justify-between">
+                  <h3 className="font-semibold">{job.title} — {job.company}</h3>
+                  <span className="text-xs text-neutral-500">{rightMeta}</span>
+                </div>
+                <ul className="mt-2 list-disc pl-5 space-y-1 text-sm text-neutral-600 dark:text-neutral-300">
+                  {job.highlights?.map((h) => (<li key={h}>{h}</li>))}
+                </ul>
+              </article>
+            )
+          })}
+        </div>
       </div>
+
+      {cv.education && cv.education.length > 0 && (
+        <div className="space-y-6">
+          <h2 className="text-2xl font-bold">Formación académica</h2>
+          <div className="grid gap-4">
+            {cv.education.map((ed) => {
+              const dateText = `${ed.start ?? ''}${(ed.start || ed.end) ? ' — ' : ''}${ed.end ?? ''}`
+              const edHighlights = (ed.highlights ?? ed.courses ?? ed.details) as string[] | undefined
+              return (
+                <article key={ed.school + ed.degree + (ed.start ?? '')} className="rounded-lg border border-neutral-200 dark:border-neutral-800 p-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-semibold">{ed.degree} — {ed.school}</h3>
+                    <span className="text-xs text-neutral-500">{dateText}</span>
+                  </div>
+                  {edHighlights && edHighlights.length > 0 && (
+                    <ul className="mt-2 list-disc pl-5 space-y-1 text-sm text-neutral-600 dark:text-neutral-300">
+                      {edHighlights.map((item) => (<li key={item}>{item}</li>))}
+                    </ul>
+                  )}
+                </article>
+              )
+            })}
+          </div>
+        </div>
+      )}
     </section>
   )
 }

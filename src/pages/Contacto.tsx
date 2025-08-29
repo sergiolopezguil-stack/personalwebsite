@@ -26,7 +26,7 @@ export default function Contacto() {
 
     try {
       // Usar mailto como fallback simple
-      const mailtoLink = `mailto:sergio.lopez.guil@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Nombre: ${formData.name}\nEmail: ${formData.email}\n\nMensaje:\n${formData.message}`)}`
+      const mailtoLink = `mailto:${cv.email}?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Nombre: ${formData.name}\nEmail: ${formData.email}\n\nMensaje:\n${formData.message}`)}`
       
       window.location.href = mailtoLink
       setSubmitStatus('success')
