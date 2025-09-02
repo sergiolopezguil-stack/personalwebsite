@@ -16,7 +16,7 @@ export default function Inicio() {
         </div>
         <div className="order-1 md:order-2 flex justify-center">
           <img
-            src="/SergioLopez.jpg"
+            src={`${import.meta.env.BASE_URL}SergioLopez.jpg`}
             alt="Foto de perfil"
             className="h-48 w-48 sm:h-56 sm:w-56 rounded-full ring-1 ring-neutral-200 dark:ring-neutral-800"
           />

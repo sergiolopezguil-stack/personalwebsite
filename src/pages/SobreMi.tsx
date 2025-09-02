@@ -7,7 +7,7 @@ export default function SobreMi() {
   const handleDownloadCV = () => {
     // Crear un enlace temporal para descargar el archivo
     const link = document.createElement('a')
-    link.href = '/CV_SergioLopez.pdf'
+    link.href = `${import.meta.env.BASE_URL}CV_SergioLopez.pdf`
     link.download = 'CV_SergioLopez.pdf'
     document.body.appendChild(link)
     link.click()
