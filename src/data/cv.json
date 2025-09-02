@@ -1,123 +1,220 @@
 {
   "name": "Sergio López Guil",
-  "role": "Programador",
+  "role": {
+    "es": "Programador junior | Técnico Superior en DAM | FullStack | Desarrollo de Videojuegos",
+    "en": "Junior developer | Higher Technician in DAM | FullStack | Game Development"
+  },
   "location": "España",
   "email": "sergio.lopez.guil@gmail.com",
   "phone": "611403470",
   "linkedin": "https://www.linkedin.com/in/sergio-lopez-guil-411293359",
   "github": "https://github.com/sergio",
-  "summary": "Programador con sólida formación en desarrollo de aplicaciones multiplataforma y experiencia práctica en HTML5, CSS, JavaScript, C#, Java. Comprometido con la excelencia técnica, la resolución eficiente de problemas y con interés en crecer profesionalmente en entornos dinámicos e innovadores.",
+  "summary": {
+    "es": "Programador con sólida formación en desarrollo de aplicaciones multiplataforma y experiencia práctica en HTML5, CSS, JavaScript, C#, Java. Comprometido con la excelencia técnica, la resolución eficiente de problemas y con interés en crecer profesionalmente en entornos dinámicos e innovadores.",
+    "en": "Developer with solid training in multiplatform app development and hands-on experience with HTML5, CSS, JavaScript, C#, Java. Committed to technical excellence, efficient problem-solving, and eager to grow in dynamic, innovative environments."
+  },
   "experience": [
     {
-      "title": "Prácticas como Programador",
+      "title": { "es": "Prácticas como Programador", "en": "Internship as Developer" },
       "company": "Solunix S.A",
       "duration": "+80h",
-      "highlights": [
-        "Desarrollo de aplicaciones con C#, Java y JavaScript.",
-        "Colaboración en entornos de trabajo reales.",
-        "Optimización de código y resolución de problemas."
-      ]
+      "highlights": {
+        "es": [
+          "Desarrollo de aplicaciones con C#, Java y JavaScript.",
+          "Colaboración en entornos de trabajo reales.",
+          "Optimización de código y resolución de problemas."
+        ],
+        "en": [
+          "Developed applications with C#, Java and JavaScript.",
+          "Collaborated in real work environments.",
+          "Code optimization and problem solving."
+        ]
+      }
     },
     {
-      "title": "Prácticas como Programador Web",
+      "title": { "es": "Prácticas como Programador Web", "en": "Internship as Web Developer" },
       "company": "Agencia de Marketing MD",
       "duration": "+380h",
-      "highlights": [
-        "Desarrollo web con HTML5, CSS, JavaScript y PHP.",
-        "Gestión de CMS y mantenimiento de sitios web.",
-        "Colaboración en proyectos de marketing digital."
-      ]
+      "highlights": {
+        "es": [
+          "Desarrollo web con HTML5, CSS, JavaScript y PHP.",
+          "Gestión de CMS y mantenimiento de sitios web.",
+          "Colaboración en proyectos de marketing digital."
+        ],
+        "en": [
+          "Web development with HTML5, CSS, JavaScript and PHP.",
+          "CMS management and website maintenance.",
+          "Collaboration on digital marketing projects."
+        ]
+      }
     }
   ],
   "education": [
     {
       "school": "IES Ferran Casablancas",
-      "degree": "Bachillerato en Ciencias y Tecnología",
+      "degree": { "es": "Bachillerato en Ciencias y Tecnología", "en": "High School Diploma in Science and Technology" },
       "start": "2021-09",
       "end": "2023-06",
-      "highlights": [
-        "Itinerario de Ciencias y Tecnología (Matemáticas, Física, Química)",
-        "Fundamentos de programación y pensamiento computacional",
-        "Proyectos tecnológicos y trabajo en equipo"
-      ],
-      "courses": [
-        "Matemáticas II",
-        "Física",
-        "Química",
-        "Tecnologías de la Información y la Comunicación (TIC)",
-        "Lengua Castellana y Literatura",
-        "Inglés"
-      ],
-      "details": [
-        "Participación en proyectos STEM y ferias tecnológicas del centro",
-        "Trabajo de investigación orientado a tecnologías de la información",
-        "Refuerzo de competencias analíticas y resolución de problemas"
-      ]
+      "highlights": {
+        "es": [
+          "Itinerario de Ciencias y Tecnología (Matemáticas, Física, Química)",
+          "Fundamentos de programación y pensamiento computacional",
+          "Proyectos tecnológicos y trabajo en equipo"
+        ],
+        "en": [
+          "Science and Technology track (Math, Physics, Chemistry)",
+          "Programming fundamentals and computational thinking",
+          "Tech projects and teamwork"
+        ]
+      },
+      "courses": {
+        "es": [
+          "Matemáticas II",
+          "Física",
+          "Química",
+          "Tecnologías de la Información y la Comunicación (TIC)",
+          "Lengua Castellana y Literatura",
+          "Inglés"
+        ],
+        "en": [
+          "Math II",
+          "Physics",
+          "Chemistry",
+          "ICT (Information and Communication Technologies)",
+          "Spanish Language and Literature",
+          "English"
+        ]
+      },
+      "details": {
+        "es": [
+          "Participación en proyectos STEM y ferias tecnológicas del centro",
+          "Trabajo de investigación orientado a tecnologías de la información",
+          "Refuerzo de competencias analíticas y resolución de problemas"
+        ],
+        "en": [
+          "Participation in STEM projects and tech fairs",
+          "Research work focused on information technologies",
+          "Strengthened analytical skills and problem solving"
+        ]
+      }
     },
     {
       "school": "IES Sabadell",
-      "degree": "Curso de formación en programación y gestión de servidor web",
+      "degree": { "es": "Curso de programación y gestión de servidor web", "en": "Training in programming and web server management" },
       "start": "2022-12",
       "end": "2023-06",
-      "highlights": [
-        "Administración de servidores web (Apache/Nginx)",
-        "Despliegue y automatización básica (entornos Linux)",
-        "Buenas prácticas de seguridad y copias de seguridad"
-      ],
-      "courses": [
-        "Linux y administración de sistemas",
-        "Servidores web: Apache y Nginx",
-        "DNS, SSL/TLS y certificados",
-        "Bash scripting y automatización",
-        "Despliegue de apps web"
-      ],
-      "details": [
-        "Configuración de virtual hosts, redirecciones y compresión",
-        "Instalación y renovación de certificados SSL con Let's Encrypt",
-        "Planificación de copias de seguridad y restauración"
-      ]
+      "highlights": {
+        "es": [
+          "Administración de servidores web (Apache/Nginx)",
+          "Despliegue y automatización básica (entornos Linux)",
+          "Buenas prácticas de seguridad y copias de seguridad"
+        ],
+        "en": [
+          "Web server administration (Apache/Nginx)",
+          "Basic deployment and automation (Linux environments)",
+          "Security best practices and backups"
+        ]
+      },
+      "courses": {
+        "es": [
+          "Linux y administración de sistemas",
+          "Servidores web: Apache y Nginx",
+          "DNS, SSL/TLS y certificados",
+          "Bash scripting y automatización",
+          "Despliegue de apps web"
+        ],
+        "en": [
+          "Linux and systems administration",
+          "Web servers: Apache and Nginx",
+          "DNS, SSL/TLS and certificates",
+          "Bash scripting and automation",
+          "Web app deployment"
+        ]
+      },
+      "details": {
+        "es": [
+          "Configuración de virtual hosts, redirecciones y compresión",
+          "Instalación y renovación de certificados SSL con Let's Encrypt",
+          "Planificación de copias de seguridad y restauración"
+        ],
+        "en": [
+          "Virtual hosts, redirects and compression configuration",
+          "SSL certificates install/renew with Let's Encrypt",
+          "Backup planning and restore"
+        ]
+      }
     },
     {
       "school": "IES Sabadell",
-      "degree": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma y Ocio Digital",
+      "degree": { "es": "Grado Superior en DAM y Ocio Digital", "en": "Higher National Diploma in DAM and Digital Entertainment" },
       "start": "2023-09",
       "end": "2025",
-      "highlights": [
-        "Programación en Java y C# (POO, patrones de diseño)",
-        "Bases de datos SQL y NoSQL (MySQL, MongoDB)",
-        "Desarrollo Android (Android Studio)",
-        "Desarrollo de videojuegos y multimedia con Unity",
-        "Gestión de proyectos y control de versiones (Git)"
-      ],
-      "courses": [
-        "Programación",
-        "Entornos de Desarrollo",
-        "Bases de Datos",
-        "Lenguajes de Marcas y Sistemas de Gestión de Información",
-        "Acceso a Datos",
-        "Desarrollo de Interfaces",
-        "Programación Multimedia y Dispositivos Móviles",
-        "Programación de Servicios y Procesos",
-        "Sistemas de Gestión Empresarial",
-        "Proyecto DAM"
-      ],
-      "details": [
-        "Proyecto integrador de app móvil con persistencia local y remota",
-        "Diseño de APIs REST y consumo desde cliente",
-        "Metodologías ágiles (Scrum) y trabajo en equipo"
-      ]
+      "highlights": {
+        "es": [
+          "Programación en Java y C# (POO, patrones de diseño)",
+          "Bases de datos SQL y NoSQL (MySQL, MongoDB)",
+          "Desarrollo Android (Android Studio)",
+          "Desarrollo de videojuegos y multimedia con Unity",
+          "Gestión de proyectos y control de versiones (Git)"
+        ],
+        "en": [
+          "Programming in Java and C# (OOP, design patterns)",
+          "SQL and NoSQL databases (MySQL, MongoDB)",
+          "Android development (Android Studio)",
+          "Game and multimedia dev with Unity",
+          "Project management and version control (Git)"
+        ]
+      },
+      "courses": {
+        "es": [
+          "Programación",
+          "Entornos de Desarrollo",
+          "Bases de Datos",
+          "Lenguajes de Marcas y Sistemas de Gestión de Información",
+          "Acceso a Datos",
+          "Desarrollo de Interfaces",
+          "Programación Multimedia y Dispositivos Móviles",
+          "Programación de Servicios y Procesos",
+          "Sistemas de Gestión Empresarial",
+          "Proyecto DAM"
+        ],
+        "en": [
+          "Programming",
+          "Development Environments",
+          "Databases",
+          "Markup Languages and Information Systems",
+          "Data Access",
+          "Interface Development",
+          "Multimedia and Mobile Devices Programming",
+          "Services and Processes Programming",
+          "Enterprise Management Systems",
+          "DAM Project"
+        ]
+      },
+      "details": {
+        "es": [
+          "Proyecto integrador de app móvil con persistencia local y remota",
+          "Diseño de APIs REST y consumo desde cliente",
+          "Metodologías ágiles (Scrum) y trabajo en equipo"
+        ],
+        "en": [
+          "Capstone mobile app with local and remote persistence",
+          "REST API design and client consumption",
+          "Agile methodologies (Scrum) and teamwork"
+        ]
+      }
     }
   ],
   "projects": [
     {
-      "name": "Portfolio SPA",
-      "description": "SPA con routing y lazy loading.",
+      "name": { "es": "Portfolio SPA", "en": "Portfolio SPA" },
+      "description": { "es": "SPA con routing y lazy loading.", "en": "SPA with routing and lazy loading." },
       "tech": ["React", "Vite", "Tailwind"],
       "link": "#"
     },
     {
-      "name": "Dashboard",
-      "description": "Tableros con estado global y gráficos.",
+      "name": { "es": "Dashboard", "en": "Dashboard" },
+      "description": { "es": "Tableros con estado global y gráficos.", "en": "Dashboards with global state and charts." },
       "tech": ["TypeScript", "Zustand", "Charts"],
       "link": "#"
     }
@@ -142,7 +239,14 @@
     "Atención al detalle",
     "Resolución de problemas",
     "Trabajo en equipo",
-    "Compromiso con la excelencia"
+    "Compromiso con la excelencia",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Vite",
+    "Node.js",
+    "Git",
+    "GitHub"
   ],
   "languages": [
     { "name": "Castellano", "level": "Nativo" },

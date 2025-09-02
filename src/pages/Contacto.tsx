@@ -1,7 +1,10 @@
 import { useState } from 'react'
+import { FaEnvelope, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import cv from '../data/cv.json'
+import { useI18n } from '../i18n/I18nProvider'
 
 export default function Contacto() {
+  const { t } = useI18n()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -47,27 +50,54 @@ export default function Contacto() {
 
   return (
     <section className="space-y-6">
-      <h2 className="text-2xl font-bold">Contacto</h2>
+      <h2 className="text-2xl font-bold">{t('section.contact')}</h2>
       
       {/* Información de contacto */}
-      <div className="space-y-3">
-        <p className="text-neutral-700 dark:text-neutral-300">
-          Email: <a className="text-primary underline" href={`mailto:${cv.email}`}>{cv.email}</a>
-        </p>
-        <p className="text-neutral-700 dark:text-neutral-300">
-          LinkedIn: <a className="text-primary underline" href={cv.linkedin} target="_blank" rel="noreferrer noopener">{cv.linkedin}</a>
-        </p>
+      <div className="flex flex-wrap gap-3">
+        {/* Email */}
+        <a
+          href={`mailto:${cv.email}`}
+          className="group inline-flex items-center gap-2 rounded-md border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-sm font-medium bg-white dark:bg-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors"
+          aria-label="Enviar email"
+        >
+          <FaEnvelope className="w-4 h-4" />
+          <span>{t('contact.email')}</span>
+        </a>
+
+        {/* LinkedIn */}
+        <a
+          href={cv.linkedin}
+          target="_blank"
+          rel="noreferrer noopener"
+          className="group inline-flex items-center gap-2 rounded-md border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-sm font-medium bg-white dark:bg-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors"
+          aria-label="Abrir LinkedIn"
+        >
+          <FaLinkedin className="w-4 h-4" />
+          <span>{t('contact.linkedin')}</span>
+        </a>
+
+        {/* WhatsApp */}
+        <a
+          href={`https://wa.me/${cv.phone}`}
+          target="_blank"
+          rel="noreferrer noopener"
+          className="group inline-flex items-center gap-2 rounded-md border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-sm font-medium bg-white dark:bg-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors"
+          aria-label="Enviar WhatsApp"
+        >
+          <FaWhatsapp className="w-4 h-4" />
+          <span>{t('contact.whatsapp')}</span>
+        </a>
       </div>
 
       {/* Formulario de contacto */}
       <div className="bg-white dark:bg-neutral-800 rounded-lg p-6 shadow-sm border border-neutral-200 dark:border-neutral-700">
-        <h3 className="text-lg font-semibold mb-4">Envíame un mensaje</h3>
+        <h3 className="text-lg font-semibold mb-4">{t('contact.form.title')}</h3>
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
-                Nombre *
+                {t('contact.form.name')}
               </label>
               <input
                 type="text"
@@ -77,13 +107,13 @@ export default function Contacto() {
                 onChange={handleChange}
                 required
                 className="w-full px-3 py-2 border border-neutral-300 dark:border-neutral-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100"
-                placeholder="Tu nombre"
+                placeholder={t('contact.placeholder.name')}
               />
             </div>
             
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
-                Email *
+                {t('contact.form.email')}
               </label>
               <input
                 type="email"
@@ -93,14 +123,14 @@ export default function Contacto() {
                 onChange={handleChange}
                 required
                 className="w-full px-3 py-2 border border-neutral-300 dark:border-neutral-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100"
-                placeholder="tu@email.com"
+                placeholder={t('contact.placeholder.email')}
               />
             </div>
           </div>
           
           <div>
             <label htmlFor="subject" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
-              Asunto *
+              {t('contact.form.subject')}
             </label>
             <input
               type="text"
@@ -110,13 +140,13 @@ export default function Contacto() {
               onChange={handleChange}
               required
               className="w-full px-3 py-2 border border-neutral-300 dark:border-neutral-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100"
-              placeholder="Asunto del mensaje"
+              placeholder={t('contact.placeholder.subject')}
             />
           </div>
           
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
-              Mensaje *
+              {t('contact.form.message')}
             </label>
             <textarea
               id="message"
@@ -126,7 +156,7 @@ export default function Contacto() {
               required
               rows={5}
               className="w-full px-3 py-2 border border-neutral-300 dark:border-neutral-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100 resize-vertical"
-              placeholder="Escribe tu mensaje aquí..."
+              placeholder={t('contact.placeholder.message')}
             />
           </div>
           
@@ -135,7 +165,7 @@ export default function Contacto() {
             disabled={isSubmitting}
             className="w-full bg-white text-black border border-primary py-2 px-4 rounded-md hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
-            {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
+            {isSubmitting ? t('contact.form.sending') : t('contact.form.submit')}
           </button>
         </form>
         
@@ -143,7 +173,7 @@ export default function Contacto() {
         {submitStatus === 'success' && (
           <div className="mt-4 p-3 bg-green-100 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-md">
             <p className="text-green-800 dark:text-green-200 text-sm">
-              ¡Mensaje enviado! Se abrirá tu cliente de correo para completar el envío.
+              {t('contact.form.success')}
             </p>
           </div>
         )}
@@ -151,7 +181,7 @@ export default function Contacto() {
         {submitStatus === 'error' && (
           <div className="mt-4 p-3 bg-red-100 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-md">
             <p className="text-red-800 dark:text-red-200 text-sm">
-              Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.
+              {t('contact.form.error')}
             </p>
           </div>
         )}

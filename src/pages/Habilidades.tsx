@@ -1,4 +1,5 @@
 import cv from '../data/cv.json'
+import { useI18n } from '../i18n/I18nProvider'
 import { 
   FaReact, 
   FaJs, 
@@ -124,17 +125,18 @@ const skillIcons: { [key: string]: any } = {
 
 // Categorías de habilidades
 const skillCategories = {
-  'Frontend': ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'Vite', 'Next.js', 'Sass', 'Bootstrap', 'Angular', 'Vue.js'],
-  'Backend': ['Node.js', 'Python', 'Java', 'PHP', 'Laravel', 'Symfony'],
-  'Database': ['Database', 'MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Prisma', 'Supabase', 'Firebase'],
-  'DevOps': ['Git', 'GitHub', 'Docker', 'AWS', 'Vercel', 'Netlify', 'Heroku', 'DigitalOcean', 'Jenkins'],
-  'Tools': ['VS Code', 'IntelliJ', 'WebStorm', 'Postman', 'Figma', 'Jira', 'Trello', 'Slack', 'Discord']
+  'Frontend': ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'Vite', 'Next.js', 'Bootstrap', 'Angular', 'Vue.js'],
+  'Backend': ['Node.js', 'Python', 'Java', 'PHP', 'Laravel'],
+  'Database': ['Database', 'MongoDB', 'PostgreSQL', 'MySQL', 'Firebase'],
+  'DevOps': ['Git', 'GitHub', 'AWS'],
+  'Tools': ['VS Code', 'Postman', 'Trello', 'Discord']
 }
 
 export default function Habilidades() {
+  const { t } = useI18n()
   return (
     <section className="space-y-8">
-      <h2 className="text-2xl font-bold">Habilidades</h2>
+      <h2 className="text-2xl font-bold">{t('section.skills')}</h2>
       
       {/* Gráfico de habilidades por categorías */}
       <div className="space-y-6">
@@ -169,7 +171,7 @@ export default function Habilidades() {
 
       {/* Lista simple de todas las habilidades */}
       <div className="bg-white dark:bg-neutral-800 rounded-lg p-6 shadow-sm border border-neutral-200 dark:border-neutral-700">
-        <h3 className="text-lg font-semibold mb-4">Todas las habilidades</h3>
+        <h3 className="text-lg font-semibold mb-4">{t('skills.all')}</h3>
                      <div className="flex flex-wrap gap-2">
                {cv.skills?.map((skill: string) => {
                  const IconComponent = skillIcons[skill]
