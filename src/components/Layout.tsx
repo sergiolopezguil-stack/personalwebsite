@@ -17,10 +17,10 @@ export default function Layout() {
   }
 
   const navLinks = [
-    { to: '/sobre-mi', label: t('nav.about') },
-    { to: '/experiencia', label: t('nav.experience') },
-    { to: '/habilidades', label: t('nav.skills') },
-    { to: '/contacto', label: t('nav.contact') }
+    { to: 'sobre-mi', label: t('nav.about') },
+    { to: 'experiencia', label: t('nav.experience') },
+    { to: 'habilidades', label: t('nav.skills') },
+    { to: 'contacto', label: t('nav.contact') }
   ]
 
   return (
