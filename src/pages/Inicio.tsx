@@ -1,4 +1,5 @@
 import cv from '../data/cv.json'
+import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n/I18nProvider'
 import { getLocalizedText } from '../i18n/localize'
 // Importar desde la raíz garantiza que Vite aplique base en producción
@@ -14,7 +15,7 @@ export default function Inicio() {
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">{cv.name}</h1>
           <p className="text-base sm:text-lg text-neutral-600 dark:text-neutral-300">{getLocalizedText(cv.role as any, language)}</p>
           <div className="mt-6 flex justify-center md:justify-start gap-3">
-            <a href="/contacto" className="inline-flex items-center rounded-md bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 px-4 py-2 text-sm font-medium hover:opacity-90">{t('cta.contact')}</a>
+            <Link to="/contacto" className="inline-flex items-center rounded-md bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 px-4 py-2 text-sm font-medium hover:opacity-90">{t('cta.contact')}</Link>
           </div>
         </div>
         <div className="order-1 md:order-2 flex justify-center">
