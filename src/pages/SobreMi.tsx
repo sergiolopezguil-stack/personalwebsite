@@ -1,13 +1,14 @@
 import cv from '../data/cv.json'
 import { useI18n } from '../i18n/I18nProvider'
 import { getLocalizedText } from '../i18n/localize'
+import cvPdf from '/CV_SergioLopez.pdf'
 
 export default function SobreMi() {
   const { language, t } = useI18n() as any
   const handleDownloadCV = () => {
     // Crear un enlace temporal para descargar el archivo
     const link = document.createElement('a')
-    link.href = `${import.meta.env.BASE_URL}CV_SergioLopez.pdf`
+    link.href = cvPdf
     link.download = 'CV_SergioLopez.pdf'
     document.body.appendChild(link)
     link.click()

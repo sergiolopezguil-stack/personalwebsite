@@ -1,6 +1,9 @@
 import cv from '../data/cv.json'
 import { useI18n } from '../i18n/I18nProvider'
 import { getLocalizedText } from '../i18n/localize'
+// Importar desde la raíz garantiza que Vite aplique base en producción
+// y genere la URL final correcta para GitHub Pages.
+import profileImg from '/SergioLopez.jpg'
 
 export default function Inicio() {
   const { t, language } = useI18n() as any
@@ -16,7 +19,7 @@ export default function Inicio() {
         </div>
         <div className="order-1 md:order-2 flex justify-center">
           <img
-            src={`${import.meta.env.BASE_URL}SergioLopez.jpg`}
+            src={profileImg}
             alt="Foto de perfil"
             className="h-48 w-48 sm:h-56 sm:w-56 rounded-full ring-1 ring-neutral-200 dark:ring-neutral-800"
           />
