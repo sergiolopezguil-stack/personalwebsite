@@ -1,4 +1,5 @@
-import { createContext, useContext, useMemo, useState, PropsWithChildren, useEffect } from 'react'
+import { createContext, useContext, useMemo, useState, useEffect } from 'react'
+import type { PropsWithChildren } from 'react'
 import es from './es.json'
 import en from './en.json'
 
