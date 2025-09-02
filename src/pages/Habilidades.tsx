@@ -1,4 +1,3 @@
-import cv from '../data/cv.json'
 import { useI18n } from '../i18n/I18nProvider'
 import { 
   FaReact, 
@@ -169,24 +168,6 @@ export default function Habilidades() {
         ))}
       </div>
 
-      {/* Lista simple de todas las habilidades */}
-      <div className="bg-white dark:bg-neutral-800 rounded-lg p-6 shadow-sm border border-neutral-200 dark:border-neutral-700">
-        <h3 className="text-lg font-semibold mb-4">{t('skills.all')}</h3>
-                     <div className="flex flex-wrap gap-2">
-               {cv.skills?.map((skill: string) => {
-                 const IconComponent = skillIcons[skill]
-                 return (
-                   <span
-                     key={skill}
-                     className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20"
-                   >
-                     {IconComponent && <IconComponent className="w-4 h-4" />}
-                     {skill}
-                   </span>
-                 )
-               })}
-             </div>
-      </div>
     </section>
   )
 }
