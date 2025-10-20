@@ -19,6 +19,7 @@ export default function Layout() {
   const navLinks = [
     { to: 'sobre-mi', label: t('nav.about') },
     { to: 'experiencia', label: t('nav.experience') },
+    { to: 'proyectos', label: t('nav.projects') },
     { to: 'habilidades', label: t('nav.skills') },
     { to: 'contacto', label: t('nav.contact') }
   ]
