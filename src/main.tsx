@@ -6,6 +6,7 @@ import Layout from './components/Layout'
 import Inicio from './pages/Inicio'
 import SobreMi from './pages/SobreMi'
 import Experiencia from './pages/Experiencia'
+import Proyectos from './pages/Proyectos'
 import Habilidades from './pages/Habilidades'
 import Contacto from './pages/Contacto'
 import { I18nProvider } from './i18n/I18nProvider'
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { index: true, element: <Inicio /> },
       { path: 'sobre-mi', element: <SobreMi /> },
       { path: 'experiencia', element: <Experiencia /> },
+      { path: 'proyectos', element: <Proyectos /> },
       { path: 'habilidades', element: <Habilidades /> },
       { path: 'contacto', element: <Contacto /> },
     ],
