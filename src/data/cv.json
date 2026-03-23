@@ -208,6 +208,15 @@
   ],
   "projects": [
     {
+      "name": { "es": "Nexus ERP", "en": "Nexus ERP" },
+      "description": {
+        "es": "ERP completo y operativo con arquitectura desacoplada: API REST en backend y SPA en frontend. Incluye facturación, clientes, productos, calendario, tareas y panel de analíticas.",
+        "en": "Full operational ERP with a decoupled architecture: REST API backend and SPA frontend. Includes billing, clients, products, calendar, tasks and analytics dashboard."
+      },
+      "tech": ["React", "TypeScript", "Node.js", "REST API", "Vite"],
+      "link": "https://sergiolopezguil-stack-nexusapp.vercel.app"
+    },
+    {
       "name": { "es": "M.A. Cosmetics", "en": "M.A. Cosmetics" },
       "description": { "es": "E-commerce de productos cosméticos naturales y sostenibles con catálogo de productos, blog y sistema de contacto.", "en": "E-commerce for natural and sustainable cosmetic products with product catalog, blog and contact system." },
       "tech": ["WordPress", "WooCommerce", "PHP", "CSS", "JavaScript"],
